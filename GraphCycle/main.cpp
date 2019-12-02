@@ -137,10 +137,11 @@ void createGraph(graph *g) {
 void printfResult(graph *g) {
     if (g-> I == 0) {
         // 判断邮箱图中是否有环
-        if(existed)
+        if(existed) {
             cout << "Yes" << endl;
-        else
+        } else {
             cout << "No" << endl;
+        }
     } else {
         // 判断无向图中是否有环
         if(g->M + DFS_Count > g->N) {
